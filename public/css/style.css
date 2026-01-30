@@ -1,0 +1,44 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;background:#f6f7fb;color:#111}
+.container{max-width:1050px;margin:0 auto;padding:24px}
+.topbar{background:#111;color:#fff}
+.topbar__inner{display:flex;align-items:center;justify-content:space-between}
+.brand a{color:#fff;text-decoration:none;font-weight:700}
+.nav a{color:#fff;text-decoration:none;margin-left:16px;opacity:.9}
+.nav a:hover{opacity:1}
+.card{background:#fff;border:1px solid #e7e9f1;border-radius:12px;padding:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.btn{display:inline-block;border:1px solid #111;background:#111;color:#fff;padding:8px 12px;border-radius:10px;text-decoration:none;cursor:pointer}
+.btn--secondary{background:#fff;color:#111}
+.btn--danger{background:#b42318;border-color:#b42318}
+.btn--small{padding:6px 10px;border-radius:10px}
+.muted{color:#6b7280}
+.price{font-weight:800;white-space:nowrap;margin-left:12px}
+.card__row{display:flex;justify-content:space-between;gap:12px}
+.tags{margin-top:8px}
+.tag{display:inline-block;background:#eef2ff;color:#1e40af;padding:2px 8px;border-radius:999px;font-size:12px;margin-right:6px}
+.tag--off{background:#fee2e2;color:#991b1b}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #eef0f6;text-align:left;vertical-align:top}
+.actions{white-space:nowrap}
+.form label{display:block;margin-bottom:10px}
+.form input,.form textarea,.form select{width:100%;padding:10px;border:1px solid #d8dbe8;border-radius:10px;margin-top:6px}
+.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.two-cols{grid-template-columns:1fr}}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0}
+.page__header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.kpi{font-size:32px;font-weight:800;margin-top:8px}
+.error{color:#b42318;font-weight:700}
+.page__header { margin-bottom: 12px; }
+.actions-row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.summary { margin-top:12px; padding:12px; border:1px dashed #d8dbe8; border-radius:12px; background:#fbfbfe; }
+.error { color:#b42318; font-weight:700; }
+.nav a.active{font-weight:800;text-decoration:underline}
+select{padding:8px;border:1px solid #d8dbe8;border-radius:10px}
+.checks{display:flex;gap:14px;flex-wrap:wrap}
+.toolbar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.searchbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.searchbar input{min-width:280px}
+.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:10px 0}
+.pager__buttons{display:flex;gap:8px;align-items:center}
+

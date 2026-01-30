@@ -1,0 +1,16 @@
+# Dépendances
+node_modules/
+
+# Fichiers sensibles
+.env
+
+# Uploads temporaires
+uploads/
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
