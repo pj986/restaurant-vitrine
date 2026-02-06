@@ -217,5 +217,29 @@ module.exports = {
 
   remove(id, cb) {
     db.query('DELETE FROM dishes WHERE id=?', [id], cb);
-  }
+  },
+  bulkInsert(items, cb) {
+  if (!items || items.length === 0) return cb(null, { affectedRows: 0 });
+
+  const sql = `
+    INSERT INTO dishes
+    (name, description, price_cents, category, is_vegetarian, is_halal, is_spicy, is_available, position)
+    VALUES ?
+  `;
+
+  const values = items.map(d => ([
+    d.name,
+    d.description || null,
+    Number(d.price_cents || 0),
+    d.category,
+    d.is_vegetarian ? 1 : 0,
+    d.is_halal ? 1 : 0,
+    d.is_spicy ? 1 : 0,
+    d.is_available ? 1 : 0,
+    Number(d.position || 0)
+  ]));
+
+  db.query(sql, [values], cb);
+},
+
 };

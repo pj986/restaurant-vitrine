@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt');
-const { layout, escapeHtml } = require('../utils/html');
+const { shell, escapeHtml } = require('../utils/html');
+
 const AdminModel = require('../models/AdminModel');
 
 function authNav() {
@@ -37,7 +38,8 @@ exports.loginPage = (req, res) => {
     </div>
   `;
 
-  res.send(layout({ title: 'Login', nav: authNav(), body }));
+  res.send(shell('Connexion — Admin', '', body));
+
 };
 
 exports.login = (req, res) => {

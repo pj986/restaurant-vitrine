@@ -8,5 +8,8 @@ router.use(requireAdmin);
 
 router.get('/reservations', adminController.reservationsPage);
 router.post('/reservations/:id/status', adminController.updateReservationStatus);
+// routes/adminRoutes.js
+router.get('/settings', adminController.settingsPage);
+router.post('/settings', adminController.settingsSave);
 
 module.exports = router;

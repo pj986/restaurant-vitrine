@@ -41,4 +41,65 @@ select{padding:8px;border:1px solid #d8dbe8;border-radius:10px}
 .searchbar input{min-width:280px}
 .pager{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:10px 0}
 .pager__buttons{display:flex;gap:8px;align-items:center}
+/* === Import CSV : lignes en erreur === */
+.tr-error {
+  background-color: #fde8e8; /* rouge clair */
+}
+
+.tr-error td {
+  border-bottom: 1px solid #f5b5b5;
+}
+
+.import-error {
+  color: #b42318;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+/* Icône erreur import CSV */
+.import-warning {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #b42318;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.import-warning .icon {
+  font-size: 1.1rem;
+}
+/* Badge erreurs import CSV */
+.badge-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #dc2626; /* rouge */
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.badge-error .icon {
+  font-size: 14px;
+}
+/* Badge succès import CSV */
+.badge-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #16a34a; /* vert */
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.badge-success .icon {
+  font-size: 14px;
+}
 
